@@ -6,7 +6,7 @@ namespace Inlämingsuppgift
     {
         static void Main(string[] args)
         {
-            
+
         }
     }
 }
