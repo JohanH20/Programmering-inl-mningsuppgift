@@ -18,8 +18,11 @@ namespace Inlämingsuppgift
                 Vinna=true;
                 Console.WriteLine("Rätt");
             }
-                else if()
+                else if(gissning>tal)
+                    Console.WriteLine("Gissningen är för hög");
 
+                else if(gissning<tal)
+                    Console.WriteLine("Gissningen är för låg");
             }
         }
     }
