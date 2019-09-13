@@ -6,8 +6,8 @@ namespace Inlämingsuppgift
     {
         static void Main(string[] args)
         {
-            Random tal = new Random();
-            int tal = tal.Random(100);
+            Random Tal = new Random();
+            int tal = Tal.Next(100);
 
             bool Vinna = false;
             while(Vinna == false){
@@ -18,11 +18,13 @@ namespace Inlämingsuppgift
                 Vinna=true;
                 Console.WriteLine("Rätt");
             }
-                else if(gissning>tal)
+                else if(gissning>tal){
                     Console.WriteLine("Gissningen är för hög");
+                }
 
-                else if(gissning<tal)
+                else if(gissning<tal){
                     Console.WriteLine("Gissningen är för låg");
+                }
             }
         }
     }
