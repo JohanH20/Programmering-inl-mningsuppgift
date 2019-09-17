@@ -13,19 +13,20 @@ namespace Inlämingsuppgift
             bool Vinna = false;
             while(Vinna == false){
             Console.Write("Gissa på ett tal mellan 1 och 100: ");
-            int gissning = int.Parse(Console.ReadLine());
+            string gissning = (Console.ReadLine());
+                int.TryParse(gissning, out int Gissning);
                 gissningar++;
             
-            if(gissning==tal){
+            if(Gissning==tal){
                 Vinna=true;
                 Console.WriteLine("Rätt");
                 Console.WriteLine("Antal gissningar är:" + gissningar);
             }
-                else if(gissning>tal){
+                else if(Gissning>tal){
                     Console.WriteLine("Gissningen är för hög");
                 }
 
-                else if(gissning<tal){
+                else if(Gissning<tal){
                     Console.WriteLine("Gissningen är för låg");
                 }
             }
